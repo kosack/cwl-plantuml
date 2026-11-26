@@ -1,0 +1,8 @@
+cwl_plantuml: |
+  ## What's Changed since $PREVIOUS_TAG
+
+  $CHANGES
+
+  ## Contributors
+
+  $CONTRIBUTORS
