@@ -18,6 +18,18 @@ Or ``conda-forge``:
 
 
 
+Rendering diagrams (``cwl-plantuml --render``) additionally needs the
+`PlantUML <https://plantuml.com>`_ executable (which requires Java), e.g.
+from ``conda-forge``:
+
+.. code-block:: shell
+
+    $ mamba install -c conda-forge plantuml
+
+Without it, ``cwl-plantuml`` still writes the PlantUML text, which can be
+rendered by any PlantUML installation or service.
+
+
 Developer Setup
 ---------------
 

@@ -10,6 +10,7 @@ Convert CWL workflows to PlantUML with more details than you get from cwlviewer
     :caption: Contents:
 
     installation
+    usage
     reference
     changelog
 

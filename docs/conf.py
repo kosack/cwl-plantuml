@@ -73,3 +73,9 @@ html_theme_options = dict(
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = []
+
+# -- numpydoc / nitpicky settings ----------------------------------------------
+# do not generate autosummary tables for class members (needs stub pages)
+numpydoc_show_class_members = False
+# cwltool does not provide an intersphinx inventory
+nitpick_ignore_regex = [("py:class", r"cwltool\..*")]
