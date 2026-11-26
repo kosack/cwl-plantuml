@@ -101,13 +101,13 @@ jobs:
           python -c 'import cwl_plantuml; print(cwl_plantuml.__version__)'
 
       - name: Build docs
-        run: make html SPHINXOPTS="-W --keep-going -n --color -j auto"
+        run: cd docs && make html SPHINXOPTS="-W --keep-going -n --color -j auto"
 
       - name: Deploy to github pages
         # only run on push to master
         if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: build/html
+          folder: docs/build/html
           clean: true
           single_commit: true
