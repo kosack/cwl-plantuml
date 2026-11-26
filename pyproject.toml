@@ -167,3 +167,22 @@ ignore = [
 # we need to ignore them here
 [tool.codespell]
 skip = "*.fits,*.fits.fz,*_packed.cwl"
+
+[tool.pixi.workspace]
+channels = ['conda-forge']
+platforms = ['osx-64', "linux-64", "osx-arm64"]
+
+[tool.pixi.pypi-dependencies]
+cwl-plantuml = { path = ".", editable = true }
+
+[tool.pixi.environments]
+default = { solve-group = "default" }
+all = { features = ['all'], solve-group = "default" }
+dev = { features = ['dev'], solve-group = "default" }
+doc = { features = ['doc'], solve-group = "default" }
+test = { features = ['test'], solve-group = "default" }
+
+[tool.pixi.tasks]
+doc = { cmd="cd docs && make html", description="build documentation", default-environment="doc"}
+doc-clean = { cmd="cd docs && make clean", description="remove built documentation", default-environment="doc"}
+test = {cmd="pytest -vv  --cov --cov-report=xml:test/coverage.xml --junitxml=test/report.xml --log-cli-level=INFO --alluredir test/allure-results", description = "run tests", default-environment = "test"}
