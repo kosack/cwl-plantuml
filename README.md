@@ -14,6 +14,9 @@ Convert CWL workflows to PlantUML with more details than you get from cwlviewer
   and a different color/line style for each output's connectors,
 * CTAO brand colors.
 
+Disclaimer: this was heavily vibe-coded and was created to help me debug some
+complex CWL workflows. I'm putting it here in case it's useful to others.
+
 ## Usage
 
 ```

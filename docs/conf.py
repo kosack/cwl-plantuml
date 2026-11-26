@@ -13,8 +13,8 @@ import os
 import cwl_plantuml
 
 project = "cwl-plantuml"
-copyright = "CTAO"
-author = "CTAO Computing Department"
+copyright = ""
+author = "Karl Kosack"
 version = cwl_plantuml.__version__
 # The full version, including alpha/beta/rc tags.
 release = version
@@ -53,7 +53,7 @@ intersphinx_mapping = {
 
 # -- Options for HTML output -------------------------------------------------
 
-html_theme = "ctao"
+html_theme = "pydata_sphinx_theme"
 html_theme_options = dict(
     navigation_with_keys=False,
     # setup for displaying multiple versions, also see setup in .gitlab-ci.yml
