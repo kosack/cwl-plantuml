@@ -34,4 +34,3 @@ e.g. `mamba install -c conda-forge plantuml`. See the documentation
 The test suite includes real workflows from the CTAO DataPipe
 (`src/cwl_plantuml/tests/data/workflows`). Tests that render diagrams are
 skipped if `plantuml` is not installed.
-
