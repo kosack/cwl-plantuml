@@ -67,6 +67,7 @@ html_theme_options = dict(
     # error rather than a warning (unlike the local-file-not-found case) -
     # skip the eager validation so early docs builds don't fail because of it
     check_switcher=False,
+    logo=dict(text="cwl-plantuml", alt_text="cwl-plantuml"),
 )
 
 # Add any paths that contain custom static files (such as style sheets) here,
